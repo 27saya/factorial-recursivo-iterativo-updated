@@ -3,7 +3,7 @@
 
 2. ¿Como se implementaron las funciones?: Para el facto_r, la funcion se llama a si misma reduciendo el valor de n cada vez mas hasta llegar al caso n<=1, donde retorna 1, mientras que para el facto_i, se utiliza un bucle for para multiplicar los números desde 2 hasta n, acumulando el resultado en una variable con el mismo nombre.
 
-Metodos para medir el tiempo de ejecución y memoria:
+3. Metodos para medir el tiempo de ejecución y memoria:
 - Tiempo de ejecución: Utilicé time.perf_counter() para registrar el tiempo antes y despues de ejecutar cada función, asi obteniendo la duración. En el caso de c++ Utilicé la función clock() de la librería <ctime> para registrar el instante de inicio y el instante de fin de cada función. Restando ambos valores obtuve el número de “ticks” de CPU consumidos, que luego dividí por la constante CLOCKS_PER_SEC para convertirlos a segundos. Al principio, el resultado se mostraba en notación cientifica debido a que los tiempos eran muy pequeños, así que para mostrarlo en formato decimal normal utilicé fixed y setprecision() de la librería <iomanip>.
 - Uso de memoria: Utilicé la librería memory_profiler y la función memory_usage() para registrar la memoria usada antes y despues de usar cada función.
   
